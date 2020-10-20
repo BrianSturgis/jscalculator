@@ -1,17 +1,17 @@
-function convertToF(celsius) 
+function convertToC () 
 {
-  const cTemp = celsius (prompt("Enter a Celsius temperature to convert to Fahrenheit:"));
-  const cToFahr = cTemp * 9 / 5 + 32;
-  const result = '{cTemp} \ xBOC is {cToFahr} \ xBOF.';
-    alert(result);
+  const cTemp = parseInt(document.getElementById('cTemp').value);
+  const cToFahr = (cTemp * (9 / 5)) + 32;
+  console.log('cTemp')
+  //comment
+  // console.log('cTemp').value = cTemp;
+  // return false;// 
 }
- 
-function convertTOC(fahrenheit)
+function convertToF ()
 {
-const fTemp = fahreneheit;
-const fToCel = (fTemp - 32) * 5 / 9;
-const result = '{fTemp} \ xBOF is {fToCel} \ xBOC.';
-  alert(result);
+  const fTemp = parseInt(document.getElementById('fTemp').value);
+  const fToCel = (fTemp - 32) * (5 / 9);
+  console.log(cTemp);
+  console.log('fTemp')
+  //comment return false;//
 }
-convertToF(60);
-convertToC(45);
